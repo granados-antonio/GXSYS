@@ -37,10 +37,7 @@ end;
 
 procedure TfrmMain.actClickExecute(Sender: TObject);
 begin
-  if MessageDlg('Hola ' + Trim(edtYourName.Text) + '!!!', mtInformation, [mbOK], 0) = mrOk then
-  begin
-    
-  end;
+  MessageDlg('Hola ' + Trim(edtYourName.Text) + '!!!', mtInformation, [mbOK], 0);
 end;
 
 end.
