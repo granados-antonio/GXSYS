@@ -36,13 +36,10 @@ begin
 end;
 
 procedure TfrmMain.actClickExecute(Sender: TObject);
-var frm: TfrmMessage;
 begin
   if MessageDlg('Hola ' + Trim(edtYourName.Text) + '!!!', mtInformation, [mbOK], 0) = mrOk then
   begin
-    frm:= TfrmMessage.Create(self);
-    frm.ShowModal();
-    FreeAndNil(frm);
+    
   end;
 end;
 
