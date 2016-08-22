@@ -41,7 +41,7 @@ begin
   if MessageDlg('Hola ' + Trim(edtYourName.Text) + '!!!', mtInformation, [mbOK], 0) = mrOk then
   begin
     frm:= TfrmMessage.Create(self);
-    frm.ShowModal();
+    frm.Show();
     FreeAndNil(frm);
   end;
 end;
